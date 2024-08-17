@@ -1,3 +1,5 @@
+@import "~@fortawesome/fontawesome-free/css/all.min.css";
+
 body {
     background-image: url('./assets/page-background.jpg');
     background-size: cover;
@@ -12,11 +14,13 @@ body {
 header {
     display: flex;
     justify-content: center;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 15px 0 10px;
+    /* padding: 10px; */
 }
 
-navbutton {
+nav button {
+    padding: 5px 10px;
     background: none;
     border: none;
     color: white;
@@ -25,22 +29,11 @@ navbutton {
     cursor: pointer;
 }
 
-navbutton.active {
+nav button:hover {
+    transform: scale(1.15);
+}
+nav button.active {
     text-decoration: underline;
-}
-
-#content {
-    padding: 20px;
-}
-
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
 }
 #content {
     background-color: rgba(255, 255, 255, 0.8);
@@ -48,14 +41,24 @@ footer {
     margin: 20px;
     border-radius: 10px;
 }
-
-header {
-    background-color: rgba(0, 0, 0, 0.7);
+footer {
+    text-align: center;
     padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgba(240, 232, 232, 0.764);
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+footer p{
+    margin: 0;
+}
+footer a {
+    text-decoration: none;
+    color: inherit;
+}
+footer a:hover{
+    text-decoration: underline;
 }
 
-nav button {
-    margin: 0 10px;
-    padding: 5px 10px;
-    font-size: 16px;
-}
+

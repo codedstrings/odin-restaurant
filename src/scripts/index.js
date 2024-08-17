@@ -2,6 +2,8 @@ import { loadHome } from './home';
 import { loadMenu } from './menu';
 import { loadAbout } from './about';
 import '../styles.css';
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
 
 function setActiveButton(button) {
     const buttons = document.querySelectorAll('button');
